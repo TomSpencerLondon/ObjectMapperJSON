@@ -21,3 +21,13 @@ public record PlayerWonGame(int payout, PlayerOutcome playerOutcome) { }
 
 ```
 
+### Correct Solution
+
+```java
+
+// gives {"type":"PlayerWonGame","payout":100,"playerOutcome":"WON"}
+@JsonTypeName("PlayerWonGame")
+@JsonTypeInfo(include = As.PROPERTY, use = Id.NAME, property = "type")
+public record PlayerWonGame(int payout, PlayerOutcome playerOutcome) { }
+
+```
