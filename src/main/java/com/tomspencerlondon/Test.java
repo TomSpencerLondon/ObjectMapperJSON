@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class Test {
 // {"payout":100,"playerOutcome":"WON"}
   // I want:
-  // {type: "PlayerWonGame", "payout":100,"playerOutcome":"WON"}
+  // {"type": "PlayerWonGame", "payout":100,"playerOutcome":"WON"}
   public static void main(String[] args) throws JsonProcessingException {
     ObjectMapper mapper = new ObjectMapper();
 
