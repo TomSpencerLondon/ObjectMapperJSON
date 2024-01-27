@@ -7,5 +7,5 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 
 // only gives {"PlayerWonGame":{"payout":100,"playerOutcome":"WON"}}
 @JsonTypeName("PlayerWonGame")
-@JsonTypeInfo(include = As.WRAPPER_OBJECT, use = Id.NAME)
+@JsonTypeInfo(include = As.PROPERTY, use = Id.NAME, property = "type")
 public record PlayerWonGame(int payout, PlayerOutcome playerOutcome) { }
