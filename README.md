@@ -29,5 +29,8 @@ public record PlayerWonGame(int payout, PlayerOutcome playerOutcome) { }
 @JsonTypeName("PlayerWonGame")
 @JsonTypeInfo(include = As.PROPERTY, use = Id.NAME, property = "type")
 public record PlayerWonGame(int payout, PlayerOutcome playerOutcome) { }
-
 ```
+
+### Explanation
+We are using Object Mapper to convert Java record objects into Json string but what if I need to add another type into Json without changing my record object.
+The above annotations help us to solve this problem. I have used two annotations `@JsonTypeName()` and `@JsonTypeInfo()`.
