@@ -1,4 +1,4 @@
-package org.example;
+package com.tomspencerlondon;
 
 public enum PlayerOutcome {
   WON, LOST;
