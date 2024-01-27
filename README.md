@@ -2,7 +2,7 @@
 
 ### Problem
 Given input then print this output:
-```json
+```bash
  {type: "PlayerWonGame", "payout":100,"playerOutcome":"WON"}
 ```
 
