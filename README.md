@@ -11,8 +11,8 @@ Fetch Output:
  {"type": "PlayerWonGame", "payout":100,"playerOutcome":"WON"}
 ```
 
-### Attempt so far 
-- using ObjectMapper
+### First Attempt 
+Using ObjectMapper:
 ```java
 // only gives {"PlayerWonGame":{"payout":100,"playerOutcome":"WON"}}
 @JsonTypeName("PlayerWonGame")
