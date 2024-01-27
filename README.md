@@ -1,6 +1,10 @@
 # ObjectMapperJSON
 
 ### Problem
+Given input then print this output:
+```json
+ {type: "PlayerWonGame", "payout":100,"playerOutcome":"WON"}
+```
 
 ```java
 public class Test {
